@@ -5,7 +5,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
 import {Http} from '@angular/http';
 import { Chart } from 'chart.js';
-import { ChartErrorEvent, ChartEvent, GoogleChartComponent } from 'angular-google-charts/esm5/public_api';
+
 
 @Component({
   selector: 'app-charts',

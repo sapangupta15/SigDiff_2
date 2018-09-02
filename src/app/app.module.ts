@@ -9,7 +9,6 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import {HttpModule} from '@angular/http';
-import { GoogleChartsModule } from 'angular-google-charts/esm5/public_api';
 import { ChartsModule } from 'ng2-charts';
 import {Diff2Html} from 'diff2html';
 import {
@@ -112,7 +111,6 @@ export class DemoMaterialModule {}
     DemoMaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    GoogleChartsModule,
     ChartsModule
   ],
   providers: [],

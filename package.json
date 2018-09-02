@@ -23,7 +23,6 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
-    "angular-google-charts": "0.0.9",
     "chart.js": "^2.7.2",
     "core-js": "^2.5.7",
     "diff2html": "^2.4.0",
