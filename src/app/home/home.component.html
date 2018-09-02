@@ -1,0 +1,123 @@
+
+<mat-accordion  style="width:1320px;margin-bottom: 5%;margin-left: 1%;">
+  <mat-expansion-panel [expanded]="panelOpenState === true">
+    <mat-expansion-panel-header>
+      <mat-panel-title style="color:#673ab7">
+        Data Difference
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <mat-select placeholder="Choose Ticker" style="margin-right: 5%;float: center" [(ngModel)]="selectedTicker" name="ticker">
+        <mat-option *ngFor="let ticker of tickers" [value]="ticker.value">
+          {{ticker.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select placeholder="Choose Section" style="margin-right: 5%;float: center" [(ngModel)]="selectedItem" name="item">
+        <mat-option *ngFor="let item of items" [value]="item.value">
+          {{item.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select placeholder="Choose Year" style="margin-right: 5%;float: center" [(ngModel)]="selectedYear" name="year">
+        <mat-option *ngFor="let year of years" [value]="year.value">
+          {{year.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" style="float: right" (click)="onClick()" >Submit</button>
+    <!-- <mat-spinner *ngIf="isLoading==true" style="align-content: center" ></mat-spinner> -->
+    <mat-progress-bar *ngIf="isLoading==true" mode="indeterminate"></mat-progress-bar>
+
+    <html style="margin-top: 2%; ">
+    <head>
+      <title>diff2html</title>
+    </head>
+
+    <body>
+      <div [innerHtml]="outputHtml"></div>
+    </body>
+
+    </html>
+
+  </mat-expansion-panel>
+
+
+
+
+  <!-- <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Charts
+      </mat-panel-title> -->
+      <!-- <mat-panel-description>
+        Charts
+      </mat-panel-description> -->
+    <!-- </mat-expansion-panel-header> -->
+    <!-- <div class="row">
+    <google-chart class="col-sm-10 col-md-10 col-lg-10" [title]="chart.title" [type]="chart.type" [data]="chart.data" [columnNames]="chart.columnNames"
+      [roles]="chart.roles" [options]="chart.options">
+    </google-chart>
+
+    <google-chart class="col-sm-10 col-md-10 col-lg-10" [title]="chart1A.title" [type]="chart1A.type" [data]="chart1A.data" [columnNames]="chart1A.columnNames"
+      [roles]="chart1A.roles" [options]="chart1A.options">
+    </google-chart>
+
+    <google-chart class="col-sm-10 col-md-10 col-lg-10" [title]="chart7.title" [type]="chart7.type" [data]="chart7.data" [columnNames]="chart7.columnNames"
+      [roles]="chart7.roles" [options]="chart7.options">
+    </google-chart>
+
+    <google-chart class="col-sm-10 col-md-10 col-lg-10" [title]="chart7A.title" [type]="chart7A.type" [data]="chart7A.data" [columnNames]="chart7A.columnNames"
+      [roles]="chart7A.roles" [options]="chart7A.options">
+    </google-chart>
+</div> -->
+
+<!-- </mat-expansion-panel> -->
+
+</mat-accordion>
+
+    <!-- <div style="margin-left:4%;">
+    <canvas   baseChart  height="300"
+            [colors]="chartColors"
+            [datasets]="Item1ChartData"
+            [labels]="Item1ChartLabels"
+            [options]="Item1ChartOptions"
+            [legend]="Item1ChartLegend"
+            [chartType]="Item1ChartType"></canvas>
+</div>
+<div >
+    <canvas   baseChart  height="300"
+            [colors]="chartColors"
+            [datasets]="Item1AChartData"
+            [labels]="Item1AChartLabels"
+            [options]="Item1AChartOptions"
+            [legend]="Item1AChartLegend"
+            [chartType]="Item1AChartType"></canvas>
+</div>
+<div  >
+    <canvas   baseChart  height="300"
+            [colors]="chartColors"
+            [datasets]="Item7ChartData"
+            [labels]="Item7ChartLabels"
+            [options]="Item7ChartOptions"
+            [legend]="Item7ChartLegend"
+            [chartType]="Item7ChartType"></canvas>
+  </div>
+<div >
+    <canvas   baseChart  height="300"
+            [colors]="chartColors"
+            [datasets]="Item7AChartData"
+            [labels]="Item7AChartLabels"
+            [options]="Item7AChartOptions"
+            [legend]="Item7AChartLegend"
+            [chartType]="Item7AChartType"></canvas>
+</div> -->
+
+
+
