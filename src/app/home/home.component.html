@@ -3,7 +3,7 @@
   <mat-expansion-panel [expanded]="panelOpenState === true">
     <mat-expansion-panel-header>
       <mat-panel-title style="color:#673ab7">
-        Data Difference
+       Choose Company
       </mat-panel-title>
     </mat-expansion-panel-header>
 
@@ -14,6 +14,14 @@
         </mat-option>
       </mat-select>
     </mat-form-field>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="panelOpenState === false">
+      <mat-expansion-panel-header>
+        <mat-panel-title style="color:#673ab7">
+          Data Difference
+        </mat-panel-title>
+      </mat-expansion-panel-header>
 
     <mat-form-field>
       <mat-select placeholder="Choose Section" style="margin-right: 5%;float: center" [(ngModel)]="selectedItem" name="item">
